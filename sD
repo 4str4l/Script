@@ -1,0 +1,531 @@
+-- Farewell Infortality.
+-- Version: 2.82
+-- Instances:
+local FS2GUI = Instance.new("ScreenGui")
+local MainFrame = Instance.new("Frame")
+local features = Instance.new("TextLabel")
+local close = Instance.new("TextButton")
+local mini = Instance.new("TextButton")
+local credits = Instance.new("TextLabel")
+local credits1 = Instance.new("TextLabel")
+local BSGunName = Instance.new("TextBox")
+local BulletGun = Instance.new("TextButton")
+local LaserGun = Instance.new("TextButton")
+local help2 = Instance.new("TextLabel")
+local line1 = Instance.new("TextLabel")
+local line4 = Instance.new("TextLabel")
+local Buy = Instance.new("TextButton")
+local line2 = Instance.new("TextLabel")
+local TPheadson = Instance.new("TextButton")
+local help1 = Instance.new("TextLabel")
+local help3 = Instance.new("TextLabel")
+local line3 = Instance.new("TextLabel")
+local ScriptName = Instance.new("TextLabel")
+local Sell = Instance.new("TextButton")
+local GunName = Instance.new("TextBox")
+local TPheadsoff = Instance.new("TextButton")
+local Print = Instance.new("TextButton")
+local help4 = Instance.new("TextLabel")
+local FEInvis = Instance.new("TextButton")
+local open = Instance.new("TextButton")
+--Properties:
+FS2GUI.Name = "FS2GUI"
+FS2GUI.Parent = game.CoreGui
+ 
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = FS2GUI
+MainFrame.Active = true
+MainFrame.BackgroundColor3 = Color3.new(0.227451, 0.227451, 0.227451)
+MainFrame.BorderSizePixel = 0
+MainFrame.Position = UDim2.new(0.5, -320, 0.5, -173)
+MainFrame.Size = UDim2.new(0, 640, 0, 346)
+ 
+features.Name = "features"
+features.Parent = MainFrame
+features.BackgroundColor3 = Color3.new(0.45098, 0.45098, 0.45098)
+features.BorderSizePixel = 0
+features.Size = UDim2.new(0, 562, 0, 38)
+features.Font = Enum.Font.SourceSans
+features.Text = "This gui will change: Firerate,Spread,Recoil,Reloadspeed"
+features.TextColor3 = Color3.new(1, 1, 1)
+features.TextSize = 27
+features.TextStrokeTransparency = 0.5
+features.TextWrapped = true
+ 
+close.Name = "close"
+close.Parent = MainFrame
+close.BackgroundColor3 = Color3.new(0.45098, 0.45098, 0.45098)
+close.BorderSizePixel = 0
+close.Position = UDim2.new(1, -39, 0, 0)
+close.Size = UDim2.new(0, 39, 0, 38)
+close.Font = Enum.Font.SourceSans
+close.Text = "X"
+close.TextColor3 = Color3.new(1, 1, 1)
+close.TextSize = 25
+close.TextWrapped = true
+ 
+mini.Name = "mini"
+mini.Parent = MainFrame
+mini.BackgroundColor3 = Color3.new(0.45098, 0.45098, 0.45098)
+mini.BorderSizePixel = 0
+mini.Position = UDim2.new(1, -78, 0, 0)
+mini.Size = UDim2.new(0, 39, 0, 38)
+mini.Font = Enum.Font.SourceSans
+mini.Text = "-"
+mini.TextColor3 = Color3.new(1, 1, 1)
+mini.TextSize = 25
+mini.TextWrapped = true
+ 
+credits.Name = "credits"
+credits.Parent = MainFrame
+credits.BackgroundColor3 = Color3.new(1, 1, 1)
+credits.BackgroundTransparency = 1
+credits.BorderSizePixel = 0
+credits.Position = UDim2.new(0, 0, 1, -20)
+credits.Size = UDim2.new(0, 141, 0, 20)
+credits.Font = Enum.Font.Cartoon
+credits.Text = "zombieslayerwtf#0583"
+credits.TextColor3 = Color3.new(1, 1, 1)
+credits.TextSize = 14
+ 
+credits1.Name = "credits1"
+credits1.Parent = MainFrame
+credits1.BackgroundColor3 = Color3.new(1, 1, 1)
+credits1.BackgroundTransparency = 1
+credits1.BorderSizePixel = 0
+credits1.Position = UDim2.new(0, 0, 1, -40)
+credits1.Size = UDim2.new(0, 141, 0, 20)
+credits1.Font = Enum.Font.Cartoon
+credits1.Text = "TheHacker Games#1918"
+credits1.TextColor3 = Color3.new(1, 1, 1)
+credits1.TextSize = 14
+ 
+BSGunName.Name = "BSGunName"
+BSGunName.Parent = MainFrame
+BSGunName.BackgroundColor3 = Color3.new(0.45098, 0.45098, 0.45098)
+BSGunName.BorderSizePixel = 0
+BSGunName.Position = UDim2.new(0, 208, 0, 38)
+BSGunName.Size = UDim2.new(0, 200, 0, 38)
+BSGunName.ClearTextOnFocus = false
+BSGunName.Font = Enum.Font.SourceSans
+BSGunName.PlaceholderText = "Item Name"
+BSGunName.Text = ""
+BSGunName.TextColor3 = Color3.new(0, 0, 0)
+BSGunName.TextSize = 25
+BSGunName.TextWrapped = true
+ 
+BulletGun.Name = "BulletGun"
+BulletGun.Parent = MainFrame
+BulletGun.BackgroundColor3 = Color3.new(0.4, 0.4, 0.4)
+BulletGun.BorderSizePixel = 0
+BulletGun.Position = UDim2.new(0, 0, 0.219653174, 0)
+BulletGun.Size = UDim2.new(0, 200, 0, 50)
+BulletGun.Font = Enum.Font.GothamBold
+BulletGun.Text = "Gun Exploit"
+BulletGun.TextColor3 = Color3.new(0, 0, 0)
+BulletGun.TextSize = 14
+ 
+LaserGun.Name = "LaserGun"
+LaserGun.Parent = MainFrame
+LaserGun.BackgroundColor3 = Color3.new(0.4, 0.4, 0.4)
+LaserGun.BorderSizePixel = 0
+LaserGun.Position = UDim2.new(0, 0, 0.364161849, 0)
+LaserGun.Size = UDim2.new(0, 200, 0, 50)
+LaserGun.Font = Enum.Font.GothamBold
+LaserGun.Text = "Laser Weapon Exploit"
+LaserGun.TextColor3 = Color3.new(0, 0, 0)
+LaserGun.TextSize = 14
+ 
+help2.Name = "help2"
+help2.Parent = MainFrame
+help2.BackgroundColor3 = Color3.new(1, 1, 1)
+help2.BackgroundTransparency = 1
+help2.BorderSizePixel = 0
+help2.Position = UDim2.new(0.324999988, 0, 0.708092451, -20)
+help2.Size = UDim2.new(0, 200, 0, 55)
+help2.Font = Enum.Font.Cartoon
+help2.Text = "Portable Shop ||| even gamepass items!"
+help2.TextColor3 = Color3.new(1, 1, 1)
+help2.TextScaled = true
+help2.TextSize = 14
+help2.TextWrapped = true
+ 
+line1.Name = "line1"
+line1.Parent = MainFrame
+line1.BackgroundColor3 = Color3.new(0, 0, 0)
+line1.BorderSizePixel = 0
+line1.Position = UDim2.new(0.5, -120, 0.109999999, 0)
+line1.Size = UDim2.new(0, 8, 0, 308)
+line1.Font = Enum.Font.SourceSans
+line1.Text = ""
+line1.TextColor3 = Color3.new(0, 0, 0)
+line1.TextSize = 14
+ 
+line4.Name = "line4"
+line4.Parent = MainFrame
+line4.BackgroundColor3 = Color3.new(0, 0, 0)
+line4.BorderSizePixel = 0
+line4.Position = UDim2.new(1, -12, 0.109999999, 0)
+line4.Size = UDim2.new(0, 12, 0, 308)
+line4.Font = Enum.Font.SourceSans
+line4.Text = "LMAO"
+line4.TextColor3 = Color3.new(1, 1, 1)
+line4.TextSize = 14
+line4.TextWrapped = true
+ 
+Buy.Name = "Buy"
+Buy.Parent = MainFrame
+Buy.BackgroundColor3 = Color3.new(0.4, 0.4, 0.4)
+Buy.BorderSizePixel = 0
+Buy.Position = UDim2.new(0.324999988, 0, 0.219826564, 0)
+Buy.Size = UDim2.new(0, 200, 0, 50)
+Buy.Font = Enum.Font.GothamBold
+Buy.Text = "Buy Weapon"
+Buy.TextColor3 = Color3.new(0, 0, 0)
+Buy.TextSize = 14
+ 
+line2.Name = "line2"
+line2.Parent = MainFrame
+line2.BackgroundColor3 = Color3.new(0, 0, 0)
+line2.BorderSizePixel = 0
+line2.Position = UDim2.new(0.5, 88, 0.109999999, 0)
+line2.Size = UDim2.new(0, 8, 0, 308)
+line2.Font = Enum.Font.SourceSans
+line2.Text = ""
+line2.TextColor3 = Color3.new(0, 0, 0)
+line2.TextSize = 14
+ 
+TPheadson.Name = "TPheadson"
+TPheadson.Parent = MainFrame
+TPheadson.BackgroundColor3 = Color3.new(0.4, 0.4, 0.4)
+TPheadson.BorderSizePixel = 0
+TPheadson.Position = UDim2.new(0.649999976, 0, 0.219826579, 0)
+TPheadson.Size = UDim2.new(0, 200, 0, 50)
+TPheadson.Font = Enum.Font.GothamBold
+TPheadson.Text = "TP Heads: on"
+TPheadson.TextColor3 = Color3.new(0, 0, 0)
+TPheadson.TextSize = 14
+ 
+help1.Name = "help1"
+help1.Parent = MainFrame
+help1.BackgroundColor3 = Color3.new(1, 1, 1)
+help1.BackgroundTransparency = 1
+help1.BorderSizePixel = 0
+help1.Position = UDim2.new(0, 0, 0.566473961, -20)
+help1.Size = UDim2.new(0, 200, 0, 55)
+help1.Font = Enum.Font.Cartoon
+help1.Text = "AutoClicker suggested with Single Firing Weapon"
+help1.TextColor3 = Color3.new(1, 1, 1)
+help1.TextScaled = true
+help1.TextSize = 14
+help1.TextWrapped = true
+ 
+help3.Name = "help3"
+help3.Parent = MainFrame
+help3.BackgroundColor3 = Color3.new(1, 1, 1)
+help3.BackgroundTransparency = 1
+help3.BorderSizePixel = 0
+help3.Position = UDim2.new(0.649999976, 0, 0.566473961, -20)
+help3.Size = UDim2.new(0, 200, 0, 55)
+help3.Font = Enum.Font.Cartoon
+help3.Text = "Will cause major lag turn off every time its day!"
+help3.TextColor3 = Color3.new(1, 1, 1)
+help3.TextScaled = true
+help3.TextSize = 14
+help3.TextWrapped = true
+ 
+line3.Name = "line3"
+line3.Parent = MainFrame
+line3.BackgroundColor3 = Color3.new(0, 0, 0)
+line3.BorderSizePixel = 0
+line3.Position = UDim2.new(1, -24, 0.109999999, 0)
+line3.Size = UDim2.new(0, 12, 0, 308)
+line3.Font = Enum.Font.SourceSans
+line3.Text = ""
+line3.TextColor3 = Color3.new(0, 0, 0)
+line3.TextSize = 14
+ 
+ScriptName.Name = "ScriptName"
+ScriptName.Parent = MainFrame
+ScriptName.BackgroundColor3 = Color3.new(0, 0, 0)
+ScriptName.BorderSizePixel = 0
+ScriptName.Position = UDim2.new(0.5, -112, 1, -30)
+ScriptName.Size = UDim2.new(0, 200, 0, 30)
+ScriptName.Font = Enum.Font.Code
+ScriptName.Text = "Xeonio The Final Stand 2 Gui"
+ScriptName.TextColor3 = Color3.new(1, 1, 1)
+ScriptName.TextSize = 14
+ScriptName.TextWrapped = true
+ 
+Sell.Name = "Sell"
+Sell.Parent = MainFrame
+Sell.BackgroundColor3 = Color3.new(0.4, 0.4, 0.4)
+Sell.BorderSizePixel = 0
+Sell.Position = UDim2.new(0.324999988, 0, 0.364335239, 0)
+Sell.Size = UDim2.new(0, 200, 0, 50)
+Sell.Font = Enum.Font.GothamBold
+Sell.Text = "Sell Weapon"
+Sell.TextColor3 = Color3.new(0, 0, 0)
+Sell.TextSize = 14
+ 
+GunName.Name = "GunName"
+GunName.Parent = MainFrame
+GunName.BackgroundColor3 = Color3.new(0.45098, 0.45098, 0.45098)
+GunName.BorderSizePixel = 0
+GunName.Position = UDim2.new(0, 0, 0, 38)
+GunName.Size = UDim2.new(0, 200, 0, 38)
+GunName.ClearTextOnFocus = false
+GunName.Font = Enum.Font.SourceSans
+GunName.PlaceholderText = "Gun Name"
+GunName.Text = ""
+GunName.TextColor3 = Color3.new(0, 0, 0)
+GunName.TextSize = 25
+GunName.TextWrapped = true
+ 
+TPheadsoff.Name = "TPheadsoff"
+TPheadsoff.Parent = MainFrame
+TPheadsoff.BackgroundColor3 = Color3.new(0.4, 0.4, 0.4)
+TPheadsoff.BorderSizePixel = 0
+TPheadsoff.Position = UDim2.new(0.649999976, 0, 0.364335239, 0)
+TPheadsoff.Size = UDim2.new(0, 200, 0, 50)
+TPheadsoff.Font = Enum.Font.GothamBold
+TPheadsoff.Text = "TP Heads: off"
+TPheadsoff.TextColor3 = Color3.new(0, 0, 0)
+TPheadsoff.TextSize = 14
+ 
+Print.Name = "Print"
+Print.Parent = MainFrame
+Print.BackgroundColor3 = Color3.new(0.4, 0.4, 0.4)
+Print.BorderSizePixel = 0
+Print.Position = UDim2.new(0.324999988, 0, 0.505953729, 0)
+Print.Size = UDim2.new(0, 200, 0, 50)
+Print.Font = Enum.Font.GothamBold
+Print.Text = "Print Weapons"
+Print.TextColor3 = Color3.new(0, 0, 0)
+Print.TextSize = 14
+ 
+help4.Name = "help4"
+help4.Parent = MainFrame
+help4.BackgroundColor3 = Color3.new(1, 1, 1)
+help4.BackgroundTransparency = 1
+help4.BorderSizePixel = 0
+help4.Position = UDim2.new(0.649999976, 0, 0.867051959, -20)
+help4.Size = UDim2.new(0, 200, 0, 55)
+help4.Font = Enum.Font.Cartoon
+help4.Text = "Its FE Invisible"
+help4.TextColor3 = Color3.new(1, 1, 1)
+help4.TextScaled = true
+help4.TextSize = 14
+help4.TextWrapped = true
+ 
+FEInvis.Name = "FEInvis"
+FEInvis.Parent = MainFrame
+FEInvis.BackgroundColor3 = Color3.new(0.4, 0.4, 0.4)
+FEInvis.BorderSizePixel = 0
+FEInvis.Position = UDim2.new(0.649999976, 0, 0.664913237, 0)
+FEInvis.Size = UDim2.new(0, 200, 0, 50)
+FEInvis.Font = Enum.Font.GothamBold
+FEInvis.Text = "Lock Place"
+FEInvis.TextColor3 = Color3.new(0, 0, 0)
+FEInvis.TextSize = 14
+ 
+open.Name = "open"
+open.Parent = FS2GUI
+open.BackgroundColor3 = Color3.new(0.580392, 0.580392, 0.580392)
+open.BorderSizePixel = 0
+open.Position = UDim2.new(0.950827658, -50, 0.769811332, -30)
+open.Size = UDim2.new(0, 100, 0, 30)
+open.Font = Enum.Font.SciFi
+open.Text = "Open"
+open.TextColor3 = Color3.new(0, 0, 0)
+open.TextSize = 30
+open.TextWrapped = true
+-- Scripts:
+function SCRIPT_NBBV83_FAKESCRIPT() -- MainFrame.Draggable 
+	local script = Instance.new('LocalScript')
+	script.Parent = MainFrame
+	script.Parent.Draggable = true
+	script.Parent.Parent.open.Draggable = true
+ 
+end
+coroutine.resume(coroutine.create(SCRIPT_NBBV83_FAKESCRIPT))
+function SCRIPT_CQUQ65_FAKESCRIPT() -- MainFrame.Main 
+	local script = Instance.new('LocalScript')
+	script.Parent = MainFrame
+	local player = game.Players.LocalPlayer
+	local SP = script.Parent
+	local startergui = game:GetService("StarterGui")
+	local Buy = SP:WaitForChild("Buy")
+	local BulletGun = SP:WaitForChild("BulletGun")
+	local LaserGun = SP:WaitForChild("LaserGun")
+	local Sell = SP:WaitForChild("Sell")
+	local BSGun = SP:WaitForChild("BSGunName")
+	local mini = SP:WaitForChild("mini")
+	local close = SP:WaitForChild("close")
+	local TPhoff = SP:WaitForChild("TPheadsoff")
+	local TPhon = SP:WaitForChild("TPheadson")
+	local open = SP.Parent:WaitForChild("open")
+	local Print = SP:WaitForChild("Print")
+	local feinv = SP:WaitForChild("FEInvis")
+	local G_ON = false
+ 
+	function alert(message,mtime)
+		if mtime == nil then mtime = 3 end
+		startergui:SetCore("SendNotification", {
+	        Title = "Xeonio";
+	        Text = message;
+			Icon = "rbxassetid://0";
+	        Duration = mtime;
+	    })
+	end
+ 
+	alert("Xeonio Has been loaded!")
+ 
+	Buy.MouseButton1Click:connect(function()
+	game.ReplicatedStorage.RemoteEvents.BuyWeapon:FireServer(BSGun.Text)
+	end)
+ 
+	Sell.MouseButton1Click:connect(function()
+		game.ReplicatedStorage.RemoteEvents.SellWeapon:FireServer(BSGun.Text)
+	end)
+ 
+	Print.MouseButton1Click:connect(function()
+		local children = game.ReplicatedStorage.Tools:GetChildren()
+	for i          = 1, #children do
+	    warn(i, children[i].Name)
+	end
+	end)
+ 
+	BulletGun.MouseButton1Click:connect(function()
+		weapon = SP.GunName.Text
+		dir = game.Players.LocalPlayer.Backpack[weapon].CurrentValues
+		dir.AttackSpeed.Value = 2e9
+		dir.Spread.Value = 0
+		dir.SpreadMax.Value = 0
+		dir.SpreadIncrease.Value = 0
+		dir.SpreadDecrease.Value = 0
+		dir.ZoomSpread.Value = 0
+		dir.ZoomSpreadMax.Value = 0
+		dir.ZoomSpreadIncrease.Value = 0
+		dir.ZoomSpreadDecrease.Value = 0
+		dir.Range.Value = 999999999
+		dir.BrustShots.Value = 10000
+		alert(weapon .." Has been exploited")
+	end)
+ 
+	LaserGun.MouseButton1Click:connect(function()
+		weapon = SP.GunName.Text
+		dir = game.Players.LocalPlayer.Backpack[weapon].CurrentValues
+		dir.AttackSpeed.Value = 2e9
+		dir.Spread.Value = 0
+		dir.SpreadMax.Value = 0
+		dir.SpreadIncrease.Value = 0
+		dir.SpreadDecrease.Value = 0
+		dir.ZoomSpread.Value = 0
+		dir.ZoomSpreadMax.Value = 0
+		dir.ZoomSpreadIncrease.Value = 0
+		dir.ZoomSpreadDecrease.Value = 0
+		dir.Range.Value = 999999999
+		dir.BrustShots.Value = 10000
+		alert(weapon .." Has been exploited")
+	end)
+ 
+	TPhon.MouseButton1Click:Connect(function()
+	G_ON = true
+	alert("TP Heads On")
+	while G_ON == true do
+		wait(.5)
+	    if game.Workspace:FindFirstChild("Zombies") then
+	        for i,v in pairs(game.Workspace.Zombies:GetChildren()) do
+ 
+	            if v:FindFirstChild("Head") then
+	               if v.Name ~= "Wraith" then --no targeting wraiths cuz they always out of range
+	               v.Head.CanCollide = false
+	               v.Head.Position = game.Players.LocalPlayer.Character.Head.Position+Vector3.new(-2,0,3)
+	               v.Head.Anchored = true
+	            end
+	        end
+	    end
+	end
+	end
+	end)
+ 
+	TPhoff.MouseButton1Click:Connect(function()
+		G_ON = false
+		alert("TP Heads Off")
+	while G_ON == true do
+		wait(.5)
+	    if game.Workspace:FindFirstChild("Zombies") then
+	        for i,v in pairs(game.Workspace.Zombies:GetChildren()) do
+ 
+	            if v:FindFirstChild("Head") then
+	               if v.Name ~= "Wraith" then --no targeting wraiths cuz they always out of range
+	               v.Head.CanCollide = false
+	               v.Head.Position = game.Players.LocalPlayer.Character.Head.Position+Vector3.new(-2,0,3)
+	               v.Head.Anchored = false
+	            end
+	        end
+	    end
+	end
+	end
+	end)
+ 
+	feinv.MouseButton1Click:Connect(function()
+local Player   = game:GetService('Players').LocalPlayer
+local AirTP    = true
+local function CheckRig()
+   if Player.Character then
+       local Humanoid = Player.Character:WaitForChild('Humanoid')
+       if Humanoid.RigType == Enum.HumanoidRigType.R15 then
+           return 'R15'
+       else
+           return 'R6'
+       end
+   end
+end
+ 
+   local Character = Player.Character
+   local StoredCF = Character.PrimaryPart.CFrame
+   if AirTP then
+       local Part = Instance.new('Part',workspace)
+       Part.Size = Vector3.new(5,0,5)
+       Part.Anchored = true
+       Part.CFrame = CFrame.new(Vector3.new(9999,9999,9999))
+       Character.PrimaryPart.CFrame = Part.CFrame*CFrame.new(0,3,0)
+       spawn(function()
+           wait(3)
+           Part:Destroy()
+       end)
+   end
+   if CheckRig() == 'R6' then
+       local Clone = Character.HumanoidRootPart:Clone()
+       Character.HumanoidRootPart:Destroy()
+       Clone.Parent = Character
+   else
+       local Clone = Character.LowerTorso.Root:Clone()
+       Character.LowerTorso.Root:Destroy()
+       Clone.Parent = Character.LowerTorso
+   end
+   if AirTP then
+       wait(1)
+       Character.PrimaryPart.CFrame = StoredCF
+   end
+	end)
+ 
+	mini.MouseButton1Click:Connect(function()
+	    SP.Visible = false
+	    open.Visible = true
+	end)
+ 
+	close.MouseButton1Click:Connect(function()
+		alert("Goodbye!")
+		SP.Parent:Destroy()
+	end)
+ 
+	open.MouseButton1Click:Connect(function()
+		SP.Visible = true
+		open.Visible = false
+	end)
+ 
+end
+coroutine.resume(coroutine.create(SCRIPT_CQUQ65_FAKESCRIPT))
